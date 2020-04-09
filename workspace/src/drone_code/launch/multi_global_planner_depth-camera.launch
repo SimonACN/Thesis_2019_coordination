@@ -1,0 +1,57 @@
+<launch>
+
+    <arg name="world_file_name"    default="simple_obstacle" />
+    <arg name="world_path" default="$(find drone_code)/worlds/$(arg world_file_name).world" />
+    <arg name="start_pos_x" default="0" />
+    <arg name="start_pos_y" default="0" />
+    <arg name="start_pos_z" default="3" />
+    <arg name="gui" value="false"/>
+
+
+
+
+
+    
+
+    <!-- Launch Gazebo -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="gui" value="$(arg gui)"/>
+        <arg name="world_name" value="$(arg world_path)" />
+    </include>
+	
+    <!-- Launch PX4 and mavros -->
+    <include file="$(find drone_code)/launch/multi_avoidance_sitl_mavros.launch" >
+        <arg name="world_path" value="$(arg world_path)" />
+	
+    </include>
+
+
+    <!-- Global planner -->
+
+    <include file="$(find drone_code)/launch/global_planner_octomap.launch" >
+    <arg name="pointcloud_topics" value="[/uav0/camera/depth/points]" />
+      <arg name="start_pos_x" value="$(arg start_pos_x)" />
+        <arg name="start_pos_y" value="$(arg start_pos_y)" />
+        <arg name="start_pos_z" value="$(arg start_pos_z)" />
+	<arg name="ns" value="uav0"/>
+	<arg name="frame_id" value="uav0/local_origin" />
+	<arg name="frame_id_octo" value="uav0/local_origin" />
+
+    </include>
+
+<!-- UAV1 -->
+    <include file="$(find drone_code)/launch/global_planner_octomap.launch" >
+    <arg name="pointcloud_topics" value="[/uav1/camera/depth/points]" />
+      <arg name="start_pos_x" value="$(arg start_pos_x)" />
+        <arg name="start_pos_y" value="$(arg start_pos_y)" />
+        <arg name="start_pos_z" value="$(arg start_pos_z)" />
+	<arg name="ns" value="uav1"/>
+	<arg name="frame_id" value="uav1/local_origin" />
+	<arg name="frame_id_octo" value="uav0/local_origin" />
+    </include>
+
+
+
+    <node pkg="rviz" type="rviz" output="screen" name="rviz" respawn="true"
+          args="-d $(find drone_code)/resource/multi_global_planner.rviz" /> 
+</launch>

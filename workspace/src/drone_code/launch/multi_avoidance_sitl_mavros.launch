@@ -1,0 +1,126 @@
+<launch>
+    <arg name="world_path" default="$(find avoidance)/sim/worlds/outdoor_village_3.world" />
+    <arg name="gui" default="true"/>
+    <arg name="ns" default="/"/>
+    <arg name="model" default="iris_depth_camera"/>
+    <arg name="vehicle" default="iris_depth_camera"/>
+
+    <param name="use_sim_time" value="true" />
+
+    <!-- Launch rqt_reconfigure -->
+    <node pkg="rqt_reconfigure" type="rqt_reconfigure" output="screen" name="rqt_reconfigure" /> 
+ 
+
+   
+
+
+  <!-- UAV0 -->
+    <group ns="uav0">
+        <param name="tf_prefix" value="uav0" />
+        <!-- MAVROS and vehicle configs -->
+        <arg name="ID" value="0"/>
+        <arg name="fcu_url" default="udp://:14540@localhost:14580"/>
+        <!-- PX4 SITL and vehicle spawn -->
+        <include file="$(find drone_code)/launch/single_vehicle_spawn_sdf.launch">
+            <arg name="x" value="0"/>
+            <arg name="y" value="0"/>
+            <arg name="z" value="0"/>
+            <arg name="R" value="0"/>
+            <arg name="P" value="0"/>
+            <arg name="Y" value="0"/>
+            <arg name="model" value="$(arg model)"/>
+            <arg name="vehicle" value="$(arg vehicle)"/>
+            <arg name="mavlink_udp_port" value="14560"/>
+            <arg name="mavlink_tcp_port" value="4560"/>
+            <arg name="ID" value="$(arg ID)"/>
+        </include>
+        <!-- MAVROS -->
+        <include file="$(find mavros)/launch/node.launch">
+            <arg name="fcu_url" value="$(arg fcu_url)"/>
+            <arg name="gcs_url" value=""/>
+            <arg name="tgt_system" value="$(eval 1 + arg('ID'))"/>
+            <arg name="tgt_component" value="1"/>
+            <arg name="pluginlists_yaml" value="$(find mavros)/launch/px4_pluginlists.yaml" />
+            <!-- Need to change the config file to get the tf topic and get local position in terms of local origin -->
+            <arg name="config_yaml" value="$(find drone_code)/resource/px4_config_global_0.yaml" />
+        </include>
+            <!-- Define a static transform from a camera internal frame to the fcu for every camera used -->
+    <!-- Ros transformation -->
+    <node pkg="tf" type="static_transform_publisher" name="tf_depth_camera"
+          args="0 0 0 -1.57 0 -1.57 uav0/fcu uav0/camera_link 10"/>
+    <node pkg="drone_code" type="uav0_node" name="uav1_node" output="screen"/> 
+    </group>
+    <!-- UAV1  -->
+    <group ns="uav1">
+        <param name="tf_prefix" value="uav1" />
+        <arg name="ID" value="1"/>
+        <arg name="fcu_url" default="udp://:14541@localhost:14581"/>
+        <arg name="x" value="0"/>
+        <arg name="y" value="10"/>
+        <arg name="z" value="0"/>
+        <arg name="R" value="0"/>
+        <arg name="P" value="0"/>
+        <arg name="Y" value="0"/>
+
+        <include file="$(find drone_code)/launch/single_vehicle_spawn_sdf.launch">
+            <arg name="x" value="$(arg x)"/>
+            <arg name="y" value="$(arg y)"/>
+            <arg name="z" value="$(arg z)"/>
+            <arg name="R" value="$(arg R)"/>
+            <arg name="P" value="$(arg P)"/>
+            <arg name="Y" value="$(arg Y)"/>
+            <arg name="model" value="$(arg model)"/>
+            <arg name="vehicle" value="$(arg vehicle)"/>
+            <arg name="mavlink_udp_port" value="14561"/>
+            <arg name="mavlink_tcp_port" value="4561"/>
+            <arg name="ID" value="$(arg ID)"/>
+        </include>
+      
+        <include file="$(find mavros)/launch/node.launch">
+            <arg name="fcu_url" value="$(arg fcu_url)"/>
+            <arg name="gcs_url" value=""/>
+            <arg name="tgt_system" value="$(eval 1 + arg('ID'))"/>
+            <arg name="tgt_component" value="1"/>
+            <arg name="pluginlists_yaml" value="$(find mavros)/launch/px4_pluginlists.yaml" />
+            <!-- Need to change the config file to get the tf topic and get local position in terms of local origin -->
+            <arg name="config_yaml" value="$(find drone_code)/resource/px4_config_global_1.yaml" />
+        </include>
+        <!-- Define a static transform from a camera internal frame to the fcu for every camera used -->
+    <!-- Ros transformation -->
+    <node pkg="tf" type="static_transform_publisher" name="tf_depth_camera"
+          args="0 0 0 -1.57 0 -1.57 uav1/fcu uav1/camera_link 10"/>
+           <node pkg="tf" type="static_transform_publisher" name="global_origin"
+          args="$(arg x) $(arg y) $(arg z) 0 0 0 uav0/local_origin uav1/local_origin 10"/>
+    <node pkg="drone_code" type="uav1_node" name="uav1_node" output="screen"/> 
+    
+    </group>
+
+ <!-- UAV2  
+    <group ns="uav2">
+        <param name="tf_prefix" value="uav2" />
+        <arg name="ID" value="2"/>
+        <arg name="fcu_url" default="udp://:14542@localhost:14582"/>
+        
+        <include file="$(find drone_code)/launch/single_vehicle_spawn_sdf.launch">
+            <arg name="x" value="0"/>
+            <arg name="y" value="1"/>
+            <arg name="z" value="0"/>
+            <arg name="R" value="0"/>
+            <arg name="P" value="0"/>
+            <arg name="Y" value="0"/>
+            <arg name="model" value="$(arg model)"/>
+            <arg name="vehicle" value="$(arg vehicle)"/>
+            <arg name="mavlink_udp_port" value="14562"/>
+            <arg name="mavlink_tcp_port" value="4562"/>
+            <arg name="ID" value="$(arg ID)"/>
+        </include>
+      
+        <include file="$(find mavros)/launch/px4.launch">
+            <arg name="fcu_url" value="$(arg fcu_url)"/>
+            <arg name="gcs_url" value=""/>
+            <arg name="tgt_system" value="$(eval 1 + arg('ID'))"/>
+            <arg name="tgt_component" value="1"/>
+        </include>
+    </group>
+-->
+</launch>
