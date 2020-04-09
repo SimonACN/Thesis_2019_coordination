@@ -116,7 +116,7 @@ occupied_cells.markers[mergedMap->getTreeDepth()].action = visualization_msgs::M
 void mergeMap(octomap::OcTree* map1, octomap::OcTree::leaf_iterator it)
 {
 	octomap::point3d point = it.getCoordinate(); //Get coordinates
-	octomap::OcTreeNode *nodeIn1 = map1->search(point); //Search for node
+	octomap::OcTreeNode *nodeIn1 = mergedMap->search(point); //Search for node
 	if (nodeIn1 != NULL) { 
 		//If local map has occupied/free node, Prioritize local map.
 		if(octree_1->isNodeOccupied(*it)){
