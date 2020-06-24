@@ -168,6 +168,36 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+drone_code/CMakeFiles/trackExplo.dir/rule:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/trackExplo.dir/rule
+.PHONY : drone_code/CMakeFiles/trackExplo.dir/rule
+
+# Convenience name for target.
+trackExplo: drone_code/CMakeFiles/trackExplo.dir/rule
+
+.PHONY : trackExplo
+
+# fast build rule for target.
+trackExplo/fast:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/trackExplo.dir/build.make drone_code/CMakeFiles/trackExplo.dir/build
+.PHONY : trackExplo/fast
+
+# Convenience name for target.
+drone_code/CMakeFiles/Coordination.dir/rule:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/Coordination.dir/rule
+.PHONY : drone_code/CMakeFiles/Coordination.dir/rule
+
+# Convenience name for target.
+Coordination: drone_code/CMakeFiles/Coordination.dir/rule
+
+.PHONY : Coordination
+
+# fast build rule for target.
+Coordination/fast:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/Coordination.dir/build.make drone_code/CMakeFiles/Coordination.dir/build
+.PHONY : Coordination/fast
+
+# Convenience name for target.
 drone_code/CMakeFiles/explore_node.dir/rule:
 	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/explore_node.dir/rule
 .PHONY : drone_code/CMakeFiles/explore_node.dir/rule
@@ -183,6 +213,126 @@ explore_node/fast:
 .PHONY : explore_node/fast
 
 # Convenience name for target.
+drone_code/CMakeFiles/drone_code_genpy.dir/rule:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/drone_code_genpy.dir/rule
+.PHONY : drone_code/CMakeFiles/drone_code_genpy.dir/rule
+
+# Convenience name for target.
+drone_code_genpy: drone_code/CMakeFiles/drone_code_genpy.dir/rule
+
+.PHONY : drone_code_genpy
+
+# fast build rule for target.
+drone_code_genpy/fast:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/drone_code_genpy.dir/build.make drone_code/CMakeFiles/drone_code_genpy.dir/build
+.PHONY : drone_code_genpy/fast
+
+# Convenience name for target.
+drone_code/CMakeFiles/drone_code_gennodejs.dir/rule:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/drone_code_gennodejs.dir/rule
+.PHONY : drone_code/CMakeFiles/drone_code_gennodejs.dir/rule
+
+# Convenience name for target.
+drone_code_gennodejs: drone_code/CMakeFiles/drone_code_gennodejs.dir/rule
+
+.PHONY : drone_code_gennodejs
+
+# fast build rule for target.
+drone_code_gennodejs/fast:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/drone_code_gennodejs.dir/build.make drone_code/CMakeFiles/drone_code_gennodejs.dir/build
+.PHONY : drone_code_gennodejs/fast
+
+# Convenience name for target.
+drone_code/CMakeFiles/drone_code_generate_messages_lisp.dir/rule:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/drone_code_generate_messages_lisp.dir/rule
+.PHONY : drone_code/CMakeFiles/drone_code_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+drone_code_generate_messages_lisp: drone_code/CMakeFiles/drone_code_generate_messages_lisp.dir/rule
+
+.PHONY : drone_code_generate_messages_lisp
+
+# fast build rule for target.
+drone_code_generate_messages_lisp/fast:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/drone_code_generate_messages_lisp.dir/build.make drone_code/CMakeFiles/drone_code_generate_messages_lisp.dir/build
+.PHONY : drone_code_generate_messages_lisp/fast
+
+# Convenience name for target.
+drone_code/CMakeFiles/drone_code_geneus.dir/rule:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/drone_code_geneus.dir/rule
+.PHONY : drone_code/CMakeFiles/drone_code_geneus.dir/rule
+
+# Convenience name for target.
+drone_code_geneus: drone_code/CMakeFiles/drone_code_geneus.dir/rule
+
+.PHONY : drone_code_geneus
+
+# fast build rule for target.
+drone_code_geneus/fast:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/drone_code_geneus.dir/build.make drone_code/CMakeFiles/drone_code_geneus.dir/build
+.PHONY : drone_code_geneus/fast
+
+# Convenience name for target.
+drone_code/CMakeFiles/drone_code_generate_messages_eus.dir/rule:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/drone_code_generate_messages_eus.dir/rule
+.PHONY : drone_code/CMakeFiles/drone_code_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+drone_code_generate_messages_eus: drone_code/CMakeFiles/drone_code_generate_messages_eus.dir/rule
+
+.PHONY : drone_code_generate_messages_eus
+
+# fast build rule for target.
+drone_code_generate_messages_eus/fast:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/drone_code_generate_messages_eus.dir/build.make drone_code/CMakeFiles/drone_code_generate_messages_eus.dir/build
+.PHONY : drone_code_generate_messages_eus/fast
+
+# Convenience name for target.
+drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir/rule:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir/rule
+.PHONY : drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir/rule
+
+# Convenience name for target.
+_drone_code_generate_messages_check_deps_coord: drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir/rule
+
+.PHONY : _drone_code_generate_messages_check_deps_coord
+
+# fast build rule for target.
+_drone_code_generate_messages_check_deps_coord/fast:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir/build.make drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir/build
+.PHONY : _drone_code_generate_messages_check_deps_coord/fast
+
+# Convenience name for target.
+drone_code/CMakeFiles/drone_code_generate_messages.dir/rule:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/drone_code_generate_messages.dir/rule
+.PHONY : drone_code/CMakeFiles/drone_code_generate_messages.dir/rule
+
+# Convenience name for target.
+drone_code_generate_messages: drone_code/CMakeFiles/drone_code_generate_messages.dir/rule
+
+.PHONY : drone_code_generate_messages
+
+# fast build rule for target.
+drone_code_generate_messages/fast:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/drone_code_generate_messages.dir/build.make drone_code/CMakeFiles/drone_code_generate_messages.dir/build
+.PHONY : drone_code_generate_messages/fast
+
+# Convenience name for target.
+drone_code/CMakeFiles/drone_code_generate_messages_py.dir/rule:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/drone_code_generate_messages_py.dir/rule
+.PHONY : drone_code/CMakeFiles/drone_code_generate_messages_py.dir/rule
+
+# Convenience name for target.
+drone_code_generate_messages_py: drone_code/CMakeFiles/drone_code_generate_messages_py.dir/rule
+
+.PHONY : drone_code_generate_messages_py
+
+# fast build rule for target.
+drone_code_generate_messages_py/fast:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/drone_code_generate_messages_py.dir/build.make drone_code/CMakeFiles/drone_code_generate_messages_py.dir/build
+.PHONY : drone_code_generate_messages_py/fast
+
+# Convenience name for target.
 drone_code/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule:
 	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
 .PHONY : drone_code/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
@@ -196,6 +346,21 @@ visualization_msgs_generate_messages_py: drone_code/CMakeFiles/visualization_msg
 visualization_msgs_generate_messages_py/fast:
 	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make drone_code/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
 .PHONY : visualization_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+drone_code/CMakeFiles/drone_code_generate_messages_nodejs.dir/rule:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/drone_code_generate_messages_nodejs.dir/rule
+.PHONY : drone_code/CMakeFiles/drone_code_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+drone_code_generate_messages_nodejs: drone_code/CMakeFiles/drone_code_generate_messages_nodejs.dir/rule
+
+.PHONY : drone_code_generate_messages_nodejs
+
+# fast build rule for target.
+drone_code_generate_messages_nodejs/fast:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/drone_code_generate_messages_nodejs.dir/build.make drone_code/CMakeFiles/drone_code_generate_messages_nodejs.dir/build
+.PHONY : drone_code_generate_messages_nodejs/fast
 
 # Convenience name for target.
 drone_code/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule:
@@ -346,6 +511,36 @@ geographic_msgs_generate_messages_nodejs: drone_code/CMakeFiles/geographic_msgs_
 geographic_msgs_generate_messages_nodejs/fast:
 	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build.make drone_code/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build
 .PHONY : geographic_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+drone_code/CMakeFiles/uav0_communication.dir/rule:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/uav0_communication.dir/rule
+.PHONY : drone_code/CMakeFiles/uav0_communication.dir/rule
+
+# Convenience name for target.
+uav0_communication: drone_code/CMakeFiles/uav0_communication.dir/rule
+
+.PHONY : uav0_communication
+
+# fast build rule for target.
+uav0_communication/fast:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav0_communication.dir/build.make drone_code/CMakeFiles/uav0_communication.dir/build
+.PHONY : uav0_communication/fast
+
+# Convenience name for target.
+drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir/rule:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir/rule
+.PHONY : drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+drone_code_generate_messages_cpp: drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir/rule
+
+.PHONY : drone_code_generate_messages_cpp
+
+# fast build rule for target.
+drone_code_generate_messages_cpp/fast:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir/build.make drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir/build
+.PHONY : drone_code_generate_messages_cpp/fast
 
 # Convenience name for target.
 drone_code/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/rule:
@@ -511,6 +706,21 @@ uuid_msgs_generate_messages_nodejs: drone_code/CMakeFiles/uuid_msgs_generate_mes
 uuid_msgs_generate_messages_nodejs/fast:
 	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build.make drone_code/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build
 .PHONY : uuid_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+drone_code/CMakeFiles/uav3_communication.dir/rule:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/uav3_communication.dir/rule
+.PHONY : drone_code/CMakeFiles/uav3_communication.dir/rule
+
+# Convenience name for target.
+uav3_communication: drone_code/CMakeFiles/uav3_communication.dir/rule
+
+.PHONY : uav3_communication
+
+# fast build rule for target.
+uav3_communication/fast:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav3_communication.dir/build.make drone_code/CMakeFiles/uav3_communication.dir/build
+.PHONY : uav3_communication/fast
 
 # Convenience name for target.
 drone_code/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
@@ -768,6 +978,21 @@ std_msgs_generate_messages_nodejs/fast:
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
+drone_code/CMakeFiles/drone_code_gencpp.dir/rule:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/drone_code_gencpp.dir/rule
+.PHONY : drone_code/CMakeFiles/drone_code_gencpp.dir/rule
+
+# Convenience name for target.
+drone_code_gencpp: drone_code/CMakeFiles/drone_code_gencpp.dir/rule
+
+.PHONY : drone_code_gencpp
+
+# fast build rule for target.
+drone_code_gencpp/fast:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/drone_code_gencpp.dir/build.make drone_code/CMakeFiles/drone_code_gencpp.dir/build
+.PHONY : drone_code_gencpp/fast
+
+# Convenience name for target.
 drone_code/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
 	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 .PHONY : drone_code/CMakeFiles/std_msgs_generate_messages_py.dir/rule
@@ -843,21 +1068,6 @@ sensor_msgs_generate_messages_py/fast:
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-drone_code/CMakeFiles/uav0_node.dir/rule:
-	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/uav0_node.dir/rule
-.PHONY : drone_code/CMakeFiles/uav0_node.dir/rule
-
-# Convenience name for target.
-uav0_node: drone_code/CMakeFiles/uav0_node.dir/rule
-
-.PHONY : uav0_node
-
-# fast build rule for target.
-uav0_node/fast:
-	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav0_node.dir/build.make drone_code/CMakeFiles/uav0_node.dir/build
-.PHONY : uav0_node/fast
-
-# Convenience name for target.
 drone_code/CMakeFiles/tf_generate_messages_py.dir/rule:
 	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/tf_generate_messages_py.dir/rule
 .PHONY : drone_code/CMakeFiles/tf_generate_messages_py.dir/rule
@@ -886,21 +1096,6 @@ actionlib_msgs_generate_messages_lisp: drone_code/CMakeFiles/actionlib_msgs_gene
 actionlib_msgs_generate_messages_lisp/fast:
 	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make drone_code/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
 .PHONY : actionlib_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-drone_code/CMakeFiles/uav1_comm.dir/rule:
-	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/uav1_comm.dir/rule
-.PHONY : drone_code/CMakeFiles/uav1_comm.dir/rule
-
-# Convenience name for target.
-uav1_comm: drone_code/CMakeFiles/uav1_comm.dir/rule
-
-.PHONY : uav1_comm
-
-# fast build rule for target.
-uav1_comm/fast:
-	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav1_comm.dir/build.make drone_code/CMakeFiles/uav1_comm.dir/build
-.PHONY : uav1_comm/fast
 
 # Convenience name for target.
 drone_code/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule:
@@ -933,21 +1128,6 @@ diagnostic_msgs_generate_messages_lisp/fast:
 .PHONY : diagnostic_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-drone_code/CMakeFiles/offb_node.dir/rule:
-	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/offb_node.dir/rule
-.PHONY : drone_code/CMakeFiles/offb_node.dir/rule
-
-# Convenience name for target.
-offb_node: drone_code/CMakeFiles/offb_node.dir/rule
-
-.PHONY : offb_node
-
-# fast build rule for target.
-offb_node/fast:
-	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/offb_node.dir/build.make drone_code/CMakeFiles/offb_node.dir/build
-.PHONY : offb_node/fast
-
-# Convenience name for target.
 drone_code/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule:
 	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
 .PHONY : drone_code/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
@@ -963,6 +1143,21 @@ nav_msgs_generate_messages_lisp/fast:
 .PHONY : nav_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
+drone_code/CMakeFiles/mapping_node.dir/rule:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/mapping_node.dir/rule
+.PHONY : drone_code/CMakeFiles/mapping_node.dir/rule
+
+# Convenience name for target.
+mapping_node: drone_code/CMakeFiles/mapping_node.dir/rule
+
+.PHONY : mapping_node
+
+# fast build rule for target.
+mapping_node/fast:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/mapping_node.dir/build.make drone_code/CMakeFiles/mapping_node.dir/build
+.PHONY : mapping_node/fast
+
+# Convenience name for target.
 drone_code/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule:
 	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
 .PHONY : drone_code/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
@@ -976,6 +1171,21 @@ nav_msgs_generate_messages_nodejs: drone_code/CMakeFiles/nav_msgs_generate_messa
 nav_msgs_generate_messages_nodejs/fast:
 	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make drone_code/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
 .PHONY : nav_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+drone_code/CMakeFiles/uav1_communication.dir/rule:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/uav1_communication.dir/rule
+.PHONY : drone_code/CMakeFiles/uav1_communication.dir/rule
+
+# Convenience name for target.
+uav1_communication: drone_code/CMakeFiles/uav1_communication.dir/rule
+
+.PHONY : uav1_communication
+
+# fast build rule for target.
+uav1_communication/fast:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav1_communication.dir/build.make drone_code/CMakeFiles/uav1_communication.dir/build
+.PHONY : uav1_communication/fast
 
 # Convenience name for target.
 drone_code/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
@@ -1021,6 +1231,21 @@ actionlib_msgs_generate_messages_eus: drone_code/CMakeFiles/actionlib_msgs_gener
 actionlib_msgs_generate_messages_eus/fast:
 	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make drone_code/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
 .PHONY : actionlib_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+drone_code/CMakeFiles/drone_code_genlisp.dir/rule:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/drone_code_genlisp.dir/rule
+.PHONY : drone_code/CMakeFiles/drone_code_genlisp.dir/rule
+
+# Convenience name for target.
+drone_code_genlisp: drone_code/CMakeFiles/drone_code_genlisp.dir/rule
+
+.PHONY : drone_code_genlisp
+
+# fast build rule for target.
+drone_code_genlisp/fast:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/drone_code_genlisp.dir/build.make drone_code/CMakeFiles/drone_code_genlisp.dir/build
+.PHONY : drone_code_genlisp/fast
 
 # Convenience name for target.
 drone_code/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule:
@@ -1263,21 +1488,6 @@ tf_generate_messages_cpp/fast:
 .PHONY : tf_generate_messages_cpp/fast
 
 # Convenience name for target.
-drone_code/CMakeFiles/uav1_node.dir/rule:
-	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/uav1_node.dir/rule
-.PHONY : drone_code/CMakeFiles/uav1_node.dir/rule
-
-# Convenience name for target.
-uav1_node: drone_code/CMakeFiles/uav1_node.dir/rule
-
-.PHONY : uav1_node
-
-# fast build rule for target.
-uav1_node/fast:
-	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav1_node.dir/build.make drone_code/CMakeFiles/uav1_node.dir/build
-.PHONY : uav1_node/fast
-
-# Convenience name for target.
 drone_code/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule:
 	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
 .PHONY : drone_code/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
@@ -1383,6 +1593,21 @@ octomap_msgs_generate_messages_lisp/fast:
 .PHONY : octomap_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
+drone_code/CMakeFiles/uav2_communication.dir/rule:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/uav2_communication.dir/rule
+.PHONY : drone_code/CMakeFiles/uav2_communication.dir/rule
+
+# Convenience name for target.
+uav2_communication: drone_code/CMakeFiles/uav2_communication.dir/rule
+
+.PHONY : uav2_communication
+
+# fast build rule for target.
+uav2_communication/fast:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav2_communication.dir/build.make drone_code/CMakeFiles/uav2_communication.dir/build
+.PHONY : uav2_communication/fast
+
+# Convenience name for target.
 drone_code/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule:
 	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
 .PHONY : drone_code/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
@@ -1442,6 +1667,33 @@ visualization_msgs_generate_messages_eus/fast:
 	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make drone_code/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
 .PHONY : visualization_msgs_generate_messages_eus/fast
 
+src/Coordination.o: src/Coordination.cpp.o
+
+.PHONY : src/Coordination.o
+
+# target to build an object file
+src/Coordination.cpp.o:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/Coordination.dir/build.make drone_code/CMakeFiles/Coordination.dir/src/Coordination.cpp.o
+.PHONY : src/Coordination.cpp.o
+
+src/Coordination.i: src/Coordination.cpp.i
+
+.PHONY : src/Coordination.i
+
+# target to preprocess a source file
+src/Coordination.cpp.i:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/Coordination.dir/build.make drone_code/CMakeFiles/Coordination.dir/src/Coordination.cpp.i
+.PHONY : src/Coordination.cpp.i
+
+src/Coordination.s: src/Coordination.cpp.s
+
+.PHONY : src/Coordination.s
+
+# target to generate assembly for a file
+src/Coordination.cpp.s:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/Coordination.dir/build.make drone_code/CMakeFiles/Coordination.dir/src/Coordination.cpp.s
+.PHONY : src/Coordination.cpp.s
+
 src/explore_node.o: src/explore_node.cpp.o
 
 .PHONY : src/explore_node.o
@@ -1469,113 +1721,167 @@ src/explore_node.cpp.s:
 	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/explore_node.dir/build.make drone_code/CMakeFiles/explore_node.dir/src/explore_node.cpp.s
 .PHONY : src/explore_node.cpp.s
 
-src/offb_node.o: src/offb_node.cpp.o
+src/mapping_node.o: src/mapping_node.cpp.o
 
-.PHONY : src/offb_node.o
-
-# target to build an object file
-src/offb_node.cpp.o:
-	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/offb_node.dir/build.make drone_code/CMakeFiles/offb_node.dir/src/offb_node.cpp.o
-.PHONY : src/offb_node.cpp.o
-
-src/offb_node.i: src/offb_node.cpp.i
-
-.PHONY : src/offb_node.i
-
-# target to preprocess a source file
-src/offb_node.cpp.i:
-	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/offb_node.dir/build.make drone_code/CMakeFiles/offb_node.dir/src/offb_node.cpp.i
-.PHONY : src/offb_node.cpp.i
-
-src/offb_node.s: src/offb_node.cpp.s
-
-.PHONY : src/offb_node.s
-
-# target to generate assembly for a file
-src/offb_node.cpp.s:
-	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/offb_node.dir/build.make drone_code/CMakeFiles/offb_node.dir/src/offb_node.cpp.s
-.PHONY : src/offb_node.cpp.s
-
-src/uav0_node.o: src/uav0_node.cpp.o
-
-.PHONY : src/uav0_node.o
+.PHONY : src/mapping_node.o
 
 # target to build an object file
-src/uav0_node.cpp.o:
-	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav0_node.dir/build.make drone_code/CMakeFiles/uav0_node.dir/src/uav0_node.cpp.o
-.PHONY : src/uav0_node.cpp.o
+src/mapping_node.cpp.o:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/mapping_node.dir/build.make drone_code/CMakeFiles/mapping_node.dir/src/mapping_node.cpp.o
+.PHONY : src/mapping_node.cpp.o
 
-src/uav0_node.i: src/uav0_node.cpp.i
+src/mapping_node.i: src/mapping_node.cpp.i
 
-.PHONY : src/uav0_node.i
+.PHONY : src/mapping_node.i
 
 # target to preprocess a source file
-src/uav0_node.cpp.i:
-	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav0_node.dir/build.make drone_code/CMakeFiles/uav0_node.dir/src/uav0_node.cpp.i
-.PHONY : src/uav0_node.cpp.i
+src/mapping_node.cpp.i:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/mapping_node.dir/build.make drone_code/CMakeFiles/mapping_node.dir/src/mapping_node.cpp.i
+.PHONY : src/mapping_node.cpp.i
 
-src/uav0_node.s: src/uav0_node.cpp.s
+src/mapping_node.s: src/mapping_node.cpp.s
 
-.PHONY : src/uav0_node.s
+.PHONY : src/mapping_node.s
 
 # target to generate assembly for a file
-src/uav0_node.cpp.s:
-	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav0_node.dir/build.make drone_code/CMakeFiles/uav0_node.dir/src/uav0_node.cpp.s
-.PHONY : src/uav0_node.cpp.s
+src/mapping_node.cpp.s:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/mapping_node.dir/build.make drone_code/CMakeFiles/mapping_node.dir/src/mapping_node.cpp.s
+.PHONY : src/mapping_node.cpp.s
 
-src/uav1_comm.o: src/uav1_comm.cpp.o
+src/trackExplo.o: src/trackExplo.cpp.o
 
-.PHONY : src/uav1_comm.o
+.PHONY : src/trackExplo.o
 
 # target to build an object file
-src/uav1_comm.cpp.o:
-	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav1_comm.dir/build.make drone_code/CMakeFiles/uav1_comm.dir/src/uav1_comm.cpp.o
-.PHONY : src/uav1_comm.cpp.o
+src/trackExplo.cpp.o:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/trackExplo.dir/build.make drone_code/CMakeFiles/trackExplo.dir/src/trackExplo.cpp.o
+.PHONY : src/trackExplo.cpp.o
 
-src/uav1_comm.i: src/uav1_comm.cpp.i
+src/trackExplo.i: src/trackExplo.cpp.i
 
-.PHONY : src/uav1_comm.i
+.PHONY : src/trackExplo.i
 
 # target to preprocess a source file
-src/uav1_comm.cpp.i:
-	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav1_comm.dir/build.make drone_code/CMakeFiles/uav1_comm.dir/src/uav1_comm.cpp.i
-.PHONY : src/uav1_comm.cpp.i
+src/trackExplo.cpp.i:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/trackExplo.dir/build.make drone_code/CMakeFiles/trackExplo.dir/src/trackExplo.cpp.i
+.PHONY : src/trackExplo.cpp.i
 
-src/uav1_comm.s: src/uav1_comm.cpp.s
+src/trackExplo.s: src/trackExplo.cpp.s
 
-.PHONY : src/uav1_comm.s
+.PHONY : src/trackExplo.s
 
 # target to generate assembly for a file
-src/uav1_comm.cpp.s:
-	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav1_comm.dir/build.make drone_code/CMakeFiles/uav1_comm.dir/src/uav1_comm.cpp.s
-.PHONY : src/uav1_comm.cpp.s
+src/trackExplo.cpp.s:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/trackExplo.dir/build.make drone_code/CMakeFiles/trackExplo.dir/src/trackExplo.cpp.s
+.PHONY : src/trackExplo.cpp.s
 
-src/uav1_node.o: src/uav1_node.cpp.o
+src/uav0_communication.o: src/uav0_communication.cpp.o
 
-.PHONY : src/uav1_node.o
+.PHONY : src/uav0_communication.o
 
 # target to build an object file
-src/uav1_node.cpp.o:
-	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav1_node.dir/build.make drone_code/CMakeFiles/uav1_node.dir/src/uav1_node.cpp.o
-.PHONY : src/uav1_node.cpp.o
+src/uav0_communication.cpp.o:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav0_communication.dir/build.make drone_code/CMakeFiles/uav0_communication.dir/src/uav0_communication.cpp.o
+.PHONY : src/uav0_communication.cpp.o
 
-src/uav1_node.i: src/uav1_node.cpp.i
+src/uav0_communication.i: src/uav0_communication.cpp.i
 
-.PHONY : src/uav1_node.i
+.PHONY : src/uav0_communication.i
 
 # target to preprocess a source file
-src/uav1_node.cpp.i:
-	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav1_node.dir/build.make drone_code/CMakeFiles/uav1_node.dir/src/uav1_node.cpp.i
-.PHONY : src/uav1_node.cpp.i
+src/uav0_communication.cpp.i:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav0_communication.dir/build.make drone_code/CMakeFiles/uav0_communication.dir/src/uav0_communication.cpp.i
+.PHONY : src/uav0_communication.cpp.i
 
-src/uav1_node.s: src/uav1_node.cpp.s
+src/uav0_communication.s: src/uav0_communication.cpp.s
 
-.PHONY : src/uav1_node.s
+.PHONY : src/uav0_communication.s
 
 # target to generate assembly for a file
-src/uav1_node.cpp.s:
-	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav1_node.dir/build.make drone_code/CMakeFiles/uav1_node.dir/src/uav1_node.cpp.s
-.PHONY : src/uav1_node.cpp.s
+src/uav0_communication.cpp.s:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav0_communication.dir/build.make drone_code/CMakeFiles/uav0_communication.dir/src/uav0_communication.cpp.s
+.PHONY : src/uav0_communication.cpp.s
+
+src/uav1_communication.o: src/uav1_communication.cpp.o
+
+.PHONY : src/uav1_communication.o
+
+# target to build an object file
+src/uav1_communication.cpp.o:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav1_communication.dir/build.make drone_code/CMakeFiles/uav1_communication.dir/src/uav1_communication.cpp.o
+.PHONY : src/uav1_communication.cpp.o
+
+src/uav1_communication.i: src/uav1_communication.cpp.i
+
+.PHONY : src/uav1_communication.i
+
+# target to preprocess a source file
+src/uav1_communication.cpp.i:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav1_communication.dir/build.make drone_code/CMakeFiles/uav1_communication.dir/src/uav1_communication.cpp.i
+.PHONY : src/uav1_communication.cpp.i
+
+src/uav1_communication.s: src/uav1_communication.cpp.s
+
+.PHONY : src/uav1_communication.s
+
+# target to generate assembly for a file
+src/uav1_communication.cpp.s:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav1_communication.dir/build.make drone_code/CMakeFiles/uav1_communication.dir/src/uav1_communication.cpp.s
+.PHONY : src/uav1_communication.cpp.s
+
+src/uav2_communication.o: src/uav2_communication.cpp.o
+
+.PHONY : src/uav2_communication.o
+
+# target to build an object file
+src/uav2_communication.cpp.o:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav2_communication.dir/build.make drone_code/CMakeFiles/uav2_communication.dir/src/uav2_communication.cpp.o
+.PHONY : src/uav2_communication.cpp.o
+
+src/uav2_communication.i: src/uav2_communication.cpp.i
+
+.PHONY : src/uav2_communication.i
+
+# target to preprocess a source file
+src/uav2_communication.cpp.i:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav2_communication.dir/build.make drone_code/CMakeFiles/uav2_communication.dir/src/uav2_communication.cpp.i
+.PHONY : src/uav2_communication.cpp.i
+
+src/uav2_communication.s: src/uav2_communication.cpp.s
+
+.PHONY : src/uav2_communication.s
+
+# target to generate assembly for a file
+src/uav2_communication.cpp.s:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav2_communication.dir/build.make drone_code/CMakeFiles/uav2_communication.dir/src/uav2_communication.cpp.s
+.PHONY : src/uav2_communication.cpp.s
+
+src/uav3_communication.o: src/uav3_communication.cpp.o
+
+.PHONY : src/uav3_communication.o
+
+# target to build an object file
+src/uav3_communication.cpp.o:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav3_communication.dir/build.make drone_code/CMakeFiles/uav3_communication.dir/src/uav3_communication.cpp.o
+.PHONY : src/uav3_communication.cpp.o
+
+src/uav3_communication.i: src/uav3_communication.cpp.i
+
+.PHONY : src/uav3_communication.i
+
+# target to preprocess a source file
+src/uav3_communication.cpp.i:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav3_communication.dir/build.make drone_code/CMakeFiles/uav3_communication.dir/src/uav3_communication.cpp.i
+.PHONY : src/uav3_communication.cpp.i
+
+src/uav3_communication.s: src/uav3_communication.cpp.s
+
+.PHONY : src/uav3_communication.s
+
+# target to generate assembly for a file
+src/uav3_communication.cpp.s:
+	cd /mnt/hgfs/Thesis2019_code/workspace/build && $(MAKE) -f drone_code/CMakeFiles/uav3_communication.dir/build.make drone_code/CMakeFiles/uav3_communication.dir/src/uav3_communication.cpp.s
+.PHONY : src/uav3_communication.cpp.s
 
 # Help Target
 help:
@@ -1586,8 +1892,19 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... list_install_components"
+	@echo "... trackExplo"
+	@echo "... Coordination"
 	@echo "... explore_node"
+	@echo "... drone_code_genpy"
+	@echo "... drone_code_gennodejs"
+	@echo "... drone_code_generate_messages_lisp"
+	@echo "... drone_code_geneus"
+	@echo "... drone_code_generate_messages_eus"
+	@echo "... _drone_code_generate_messages_check_deps_coord"
+	@echo "... drone_code_generate_messages"
+	@echo "... drone_code_generate_messages_py"
 	@echo "... visualization_msgs_generate_messages_py"
+	@echo "... drone_code_generate_messages_nodejs"
 	@echo "... visualization_msgs_generate_messages_nodejs"
 	@echo "... uuid_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_nodejs"
@@ -1598,6 +1915,8 @@ help:
 	@echo "... diagnostic_msgs_generate_messages_py"
 	@echo "... geographic_msgs_generate_messages_eus"
 	@echo "... geographic_msgs_generate_messages_nodejs"
+	@echo "... uav0_communication"
+	@echo "... drone_code_generate_messages_cpp"
 	@echo "... geographic_msgs_generate_messages_cpp"
 	@echo "... mavros_msgs_generate_messages_py"
 	@echo "... mavros_msgs_generate_messages_eus"
@@ -1609,6 +1928,7 @@ help:
 	@echo "... mavros_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... uuid_msgs_generate_messages_nodejs"
+	@echo "... uav3_communication"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... geographic_msgs_generate_messages_py"
@@ -1628,25 +1948,26 @@ help:
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... uuid_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... drone_code_gencpp"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... nav_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... uav0_node"
 	@echo "... tf_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_lisp"
-	@echo "... uav1_comm"
 	@echo "... diagnostic_msgs_generate_messages_eus"
 	@echo "... install"
 	@echo "... diagnostic_msgs_generate_messages_lisp"
-	@echo "... offb_node"
 	@echo "... nav_msgs_generate_messages_lisp"
 	@echo "... test"
+	@echo "... mapping_node"
 	@echo "... nav_msgs_generate_messages_nodejs"
+	@echo "... uav1_communication"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_eus"
+	@echo "... drone_code_genlisp"
 	@echo "... octomap_msgs_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_nodejs"
 	@echo "... actionlib_msgs_generate_messages_py"
@@ -1663,7 +1984,6 @@ help:
 	@echo "... tf2_msgs_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... tf_generate_messages_cpp"
-	@echo "... uav1_node"
 	@echo "... actionlib_msgs_generate_messages_cpp"
 	@echo "... tf_generate_messages_eus"
 	@echo "... tf_generate_messages_lisp"
@@ -1671,25 +1991,35 @@ help:
 	@echo "... tf_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... octomap_msgs_generate_messages_lisp"
+	@echo "... uav2_communication"
 	@echo "... nav_msgs_generate_messages_eus"
 	@echo "... tf2_msgs_generate_messages_eus"
 	@echo "... visualization_msgs_generate_messages_cpp"
 	@echo "... visualization_msgs_generate_messages_eus"
+	@echo "... src/Coordination.o"
+	@echo "... src/Coordination.i"
+	@echo "... src/Coordination.s"
 	@echo "... src/explore_node.o"
 	@echo "... src/explore_node.i"
 	@echo "... src/explore_node.s"
-	@echo "... src/offb_node.o"
-	@echo "... src/offb_node.i"
-	@echo "... src/offb_node.s"
-	@echo "... src/uav0_node.o"
-	@echo "... src/uav0_node.i"
-	@echo "... src/uav0_node.s"
-	@echo "... src/uav1_comm.o"
-	@echo "... src/uav1_comm.i"
-	@echo "... src/uav1_comm.s"
-	@echo "... src/uav1_node.o"
-	@echo "... src/uav1_node.i"
-	@echo "... src/uav1_node.s"
+	@echo "... src/mapping_node.o"
+	@echo "... src/mapping_node.i"
+	@echo "... src/mapping_node.s"
+	@echo "... src/trackExplo.o"
+	@echo "... src/trackExplo.i"
+	@echo "... src/trackExplo.s"
+	@echo "... src/uav0_communication.o"
+	@echo "... src/uav0_communication.i"
+	@echo "... src/uav0_communication.s"
+	@echo "... src/uav1_communication.o"
+	@echo "... src/uav1_communication.i"
+	@echo "... src/uav1_communication.s"
+	@echo "... src/uav2_communication.o"
+	@echo "... src/uav2_communication.i"
+	@echo "... src/uav2_communication.s"
+	@echo "... src/uav3_communication.o"
+	@echo "... src/uav3_communication.i"
+	@echo "... src/uav3_communication.s"
 .PHONY : help
 
 

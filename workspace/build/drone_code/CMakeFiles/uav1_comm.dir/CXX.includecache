@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/mnt/hgfs/Thesis2019_code/workspace/src/drone_code/include/coordination.h
+std_msgs/Int8.h
+-
+
 /mnt/hgfs/Thesis2019_code/workspace/src/drone_code/src/uav1_comm.cpp
 ros/ros.h
 -
@@ -31,6 +35,10 @@ octomap/OcTreeKey.h
 -
 nav_msgs/OccupancyGrid.h
 -
+cmath
+-
+coordination.h
+/mnt/hgfs/Thesis2019_code/workspace/src/drone_code/src/coordination.h
 
 /opt/ros/melodic/include/geometry_msgs/Point.h
 string
@@ -1235,6 +1243,22 @@ ros/message_operations.h
 -
 
 /opt/ros/melodic/include/std_msgs/Header.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
+/opt/ros/melodic/include/std_msgs/Int8.h
 string
 -
 vector

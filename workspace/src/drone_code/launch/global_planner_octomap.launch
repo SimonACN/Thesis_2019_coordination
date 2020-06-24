@@ -1,5 +1,5 @@
 <launch>
-    <arg name="pointcloud_topics" default="[/camera/depth/points"/>
+    <arg name="pointcloud_topics" default="/camera/depth/points"/>
     <arg name="start_pos_x" default="0" />
     <arg name="start_pos_y" default="0" />
     <arg name="start_pos_z" default="3.5" />
@@ -11,7 +11,7 @@
 
  <!-- Global Planner -->
 <group ns="$(arg ns)">
-    <node pkg="global_planner" type="global_planner_node" name="global_planner" output="screen"
+    <node pkg="global_planner" type="global_planner_node" name="global_planner"
           args="$(find global_planner)/resource/random_goals"  >
         <param name="frame_id" type="string" value="$(arg frame_id)" />
         <param name="start_pos_x" value="$(arg start_pos_x)" />
@@ -21,6 +21,7 @@
         <rosparam param="pointcloud_topics" subst_value="True">$(arg pointcloud_topics)</rosparam>
         <param name="robot_radius" value="0.5" /> 
     </node> 
+
 
     <node pkg="octomap_server" type="octomap_server_node" name="octomap_server">
         <param name="resolution" value="0.5" />
@@ -41,7 +42,7 @@
         <param name="height_map" value="false" />
         <param name="publish_free_space" value="false" />
         <!-- data source to integrate (PointCloud2) -->
-       <!-- <remap from="cloud_in" to="$(arg pointcloud_topics)" /> --> 
+        <!--<remap from="cloud_in" to="$(arg pointcloud_topics)" /> -->
     </node>
 </group>
 </launch>

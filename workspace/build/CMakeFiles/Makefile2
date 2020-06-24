@@ -264,7 +264,7 @@ gtest/googlemock/preinstall: gtest/googlemock/gtest/preinstall
 gtest/googlemock/CMakeFiles/gmock_main.dir/all:
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num=6,7,8,9 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num=15,16,17,18 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -296,7 +296,7 @@ clean: gtest/googlemock/CMakeFiles/gmock_main.dir/clean
 gtest/googlemock/CMakeFiles/gmock.dir/all:
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num=3,4,5 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num=12,13,14 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -347,7 +347,7 @@ gtest/googlemock/gtest/preinstall:
 gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all: gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num=12,13 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num=21,22 "Built target gtest_main"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -379,7 +379,7 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
 gtest/googlemock/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num=10,11 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num=19,20 "Built target gtest"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -408,17 +408,32 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
 # Directory level rules for directory drone_code
 
 # Convenience name for "all" pass in the directory.
+drone_code/all: drone_code/CMakeFiles/trackExplo.dir/all
+drone_code/all: drone_code/CMakeFiles/Coordination.dir/all
 drone_code/all: drone_code/CMakeFiles/explore_node.dir/all
-drone_code/all: drone_code/CMakeFiles/uav0_node.dir/all
-drone_code/all: drone_code/CMakeFiles/uav1_comm.dir/all
-drone_code/all: drone_code/CMakeFiles/offb_node.dir/all
-drone_code/all: drone_code/CMakeFiles/uav1_node.dir/all
+drone_code/all: drone_code/CMakeFiles/drone_code_generate_messages.dir/all
+drone_code/all: drone_code/CMakeFiles/uav0_communication.dir/all
+drone_code/all: drone_code/CMakeFiles/uav3_communication.dir/all
+drone_code/all: drone_code/CMakeFiles/mapping_node.dir/all
+drone_code/all: drone_code/CMakeFiles/uav1_communication.dir/all
+drone_code/all: drone_code/CMakeFiles/uav2_communication.dir/all
 
 .PHONY : drone_code/all
 
 # Convenience name for "clean" pass in the directory.
+drone_code/clean: drone_code/CMakeFiles/trackExplo.dir/clean
+drone_code/clean: drone_code/CMakeFiles/Coordination.dir/clean
 drone_code/clean: drone_code/CMakeFiles/explore_node.dir/clean
+drone_code/clean: drone_code/CMakeFiles/drone_code_genpy.dir/clean
+drone_code/clean: drone_code/CMakeFiles/drone_code_gennodejs.dir/clean
+drone_code/clean: drone_code/CMakeFiles/drone_code_generate_messages_lisp.dir/clean
+drone_code/clean: drone_code/CMakeFiles/drone_code_geneus.dir/clean
+drone_code/clean: drone_code/CMakeFiles/drone_code_generate_messages_eus.dir/clean
+drone_code/clean: drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir/clean
+drone_code/clean: drone_code/CMakeFiles/drone_code_generate_messages.dir/clean
+drone_code/clean: drone_code/CMakeFiles/drone_code_generate_messages_py.dir/clean
 drone_code/clean: drone_code/CMakeFiles/visualization_msgs_generate_messages_py.dir/clean
+drone_code/clean: drone_code/CMakeFiles/drone_code_generate_messages_nodejs.dir/clean
 drone_code/clean: drone_code/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/clean
 drone_code/clean: drone_code/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/clean
 drone_code/clean: drone_code/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
@@ -429,6 +444,8 @@ drone_code/clean: drone_code/CMakeFiles/uuid_msgs_generate_messages_eus.dir/clea
 drone_code/clean: drone_code/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/clean
 drone_code/clean: drone_code/CMakeFiles/geographic_msgs_generate_messages_eus.dir/clean
 drone_code/clean: drone_code/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/clean
+drone_code/clean: drone_code/CMakeFiles/uav0_communication.dir/clean
+drone_code/clean: drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir/clean
 drone_code/clean: drone_code/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/clean
 drone_code/clean: drone_code/CMakeFiles/mavros_msgs_generate_messages_py.dir/clean
 drone_code/clean: drone_code/CMakeFiles/mavros_msgs_generate_messages_eus.dir/clean
@@ -440,6 +457,7 @@ drone_code/clean: drone_code/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/
 drone_code/clean: drone_code/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/clean
 drone_code/clean: drone_code/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
 drone_code/clean: drone_code/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/clean
+drone_code/clean: drone_code/CMakeFiles/uav3_communication.dir/clean
 drone_code/clean: drone_code/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 drone_code/clean: drone_code/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 drone_code/clean: drone_code/CMakeFiles/geographic_msgs_generate_messages_py.dir/clean
@@ -457,23 +475,24 @@ drone_code/clean: drone_code/CMakeFiles/visualization_msgs_generate_messages_lis
 drone_code/clean: drone_code/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 drone_code/clean: drone_code/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/clean
 drone_code/clean: drone_code/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+drone_code/clean: drone_code/CMakeFiles/drone_code_gencpp.dir/clean
 drone_code/clean: drone_code/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 drone_code/clean: drone_code/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
 drone_code/clean: drone_code/CMakeFiles/nav_msgs_generate_messages_cpp.dir/clean
 drone_code/clean: drone_code/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 drone_code/clean: drone_code/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-drone_code/clean: drone_code/CMakeFiles/uav0_node.dir/clean
 drone_code/clean: drone_code/CMakeFiles/tf_generate_messages_py.dir/clean
 drone_code/clean: drone_code/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean
-drone_code/clean: drone_code/CMakeFiles/uav1_comm.dir/clean
 drone_code/clean: drone_code/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/clean
 drone_code/clean: drone_code/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/clean
-drone_code/clean: drone_code/CMakeFiles/offb_node.dir/clean
 drone_code/clean: drone_code/CMakeFiles/nav_msgs_generate_messages_lisp.dir/clean
+drone_code/clean: drone_code/CMakeFiles/mapping_node.dir/clean
 drone_code/clean: drone_code/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/clean
+drone_code/clean: drone_code/CMakeFiles/uav1_communication.dir/clean
 drone_code/clean: drone_code/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 drone_code/clean: drone_code/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 drone_code/clean: drone_code/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
+drone_code/clean: drone_code/CMakeFiles/drone_code_genlisp.dir/clean
 drone_code/clean: drone_code/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/clean
 drone_code/clean: drone_code/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean
 drone_code/clean: drone_code/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
@@ -490,7 +509,6 @@ drone_code/clean: drone_code/CMakeFiles/octomap_msgs_generate_messages_nodejs.di
 drone_code/clean: drone_code/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean
 drone_code/clean: drone_code/CMakeFiles/actionlib_generate_messages_nodejs.dir/clean
 drone_code/clean: drone_code/CMakeFiles/tf_generate_messages_cpp.dir/clean
-drone_code/clean: drone_code/CMakeFiles/uav1_node.dir/clean
 drone_code/clean: drone_code/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean
 drone_code/clean: drone_code/CMakeFiles/tf_generate_messages_eus.dir/clean
 drone_code/clean: drone_code/CMakeFiles/tf_generate_messages_lisp.dir/clean
@@ -498,6 +516,7 @@ drone_code/clean: drone_code/CMakeFiles/octomap_msgs_generate_messages_py.dir/cl
 drone_code/clean: drone_code/CMakeFiles/tf_generate_messages_nodejs.dir/clean
 drone_code/clean: drone_code/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 drone_code/clean: drone_code/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/clean
+drone_code/clean: drone_code/CMakeFiles/uav2_communication.dir/clean
 drone_code/clean: drone_code/CMakeFiles/nav_msgs_generate_messages_eus.dir/clean
 drone_code/clean: drone_code/CMakeFiles/tf2_msgs_generate_messages_eus.dir/clean
 drone_code/clean: drone_code/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/clean
@@ -511,13 +530,87 @@ drone_code/preinstall:
 .PHONY : drone_code/preinstall
 
 #=============================================================================
+# Target rules for target drone_code/CMakeFiles/trackExplo.dir
+
+# All Build rule for target.
+drone_code/CMakeFiles/trackExplo.dir/all:
+	$(MAKE) -f drone_code/CMakeFiles/trackExplo.dir/build.make drone_code/CMakeFiles/trackExplo.dir/depend
+	$(MAKE) -f drone_code/CMakeFiles/trackExplo.dir/build.make drone_code/CMakeFiles/trackExplo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num=25,26 "Built target trackExplo"
+.PHONY : drone_code/CMakeFiles/trackExplo.dir/all
+
+# Include target in all.
+all: drone_code/CMakeFiles/trackExplo.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+drone_code/CMakeFiles/trackExplo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/trackExplo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 0
+.PHONY : drone_code/CMakeFiles/trackExplo.dir/rule
+
+# Convenience name for target.
+trackExplo: drone_code/CMakeFiles/trackExplo.dir/rule
+
+.PHONY : trackExplo
+
+# clean rule for target.
+drone_code/CMakeFiles/trackExplo.dir/clean:
+	$(MAKE) -f drone_code/CMakeFiles/trackExplo.dir/build.make drone_code/CMakeFiles/trackExplo.dir/clean
+.PHONY : drone_code/CMakeFiles/trackExplo.dir/clean
+
+# clean rule for target.
+clean: drone_code/CMakeFiles/trackExplo.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target drone_code/CMakeFiles/Coordination.dir
+
+# All Build rule for target.
+drone_code/CMakeFiles/Coordination.dir/all:
+	$(MAKE) -f drone_code/CMakeFiles/Coordination.dir/build.make drone_code/CMakeFiles/Coordination.dir/depend
+	$(MAKE) -f drone_code/CMakeFiles/Coordination.dir/build.make drone_code/CMakeFiles/Coordination.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num=1,2 "Built target Coordination"
+.PHONY : drone_code/CMakeFiles/Coordination.dir/all
+
+# Include target in all.
+all: drone_code/CMakeFiles/Coordination.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+drone_code/CMakeFiles/Coordination.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/Coordination.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 0
+.PHONY : drone_code/CMakeFiles/Coordination.dir/rule
+
+# Convenience name for target.
+Coordination: drone_code/CMakeFiles/Coordination.dir/rule
+
+.PHONY : Coordination
+
+# clean rule for target.
+drone_code/CMakeFiles/Coordination.dir/clean:
+	$(MAKE) -f drone_code/CMakeFiles/Coordination.dir/build.make drone_code/CMakeFiles/Coordination.dir/clean
+.PHONY : drone_code/CMakeFiles/Coordination.dir/clean
+
+# clean rule for target.
+clean: drone_code/CMakeFiles/Coordination.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target drone_code/CMakeFiles/explore_node.dir
 
 # All Build rule for target.
-drone_code/CMakeFiles/explore_node.dir/all:
+drone_code/CMakeFiles/explore_node.dir/all: drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir/all
 	$(MAKE) -f drone_code/CMakeFiles/explore_node.dir/build.make drone_code/CMakeFiles/explore_node.dir/depend
 	$(MAKE) -f drone_code/CMakeFiles/explore_node.dir/build.make drone_code/CMakeFiles/explore_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num=1,2 "Built target explore_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num=10,11 "Built target explore_node"
 .PHONY : drone_code/CMakeFiles/explore_node.dir/all
 
 # Include target in all.
@@ -527,7 +620,7 @@ all: drone_code/CMakeFiles/explore_node.dir/all
 
 # Build rule for subdir invocation for target.
 drone_code/CMakeFiles/explore_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/explore_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 0
 .PHONY : drone_code/CMakeFiles/explore_node.dir/rule
@@ -544,6 +637,277 @@ drone_code/CMakeFiles/explore_node.dir/clean:
 
 # clean rule for target.
 clean: drone_code/CMakeFiles/explore_node.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target drone_code/CMakeFiles/drone_code_genpy.dir
+
+# All Build rule for target.
+drone_code/CMakeFiles/drone_code_genpy.dir/all: drone_code/CMakeFiles/drone_code_generate_messages_py.dir/all
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_genpy.dir/build.make drone_code/CMakeFiles/drone_code_genpy.dir/depend
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_genpy.dir/build.make drone_code/CMakeFiles/drone_code_genpy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num= "Built target drone_code_genpy"
+.PHONY : drone_code/CMakeFiles/drone_code_genpy.dir/all
+
+# Build rule for subdir invocation for target.
+drone_code/CMakeFiles/drone_code_genpy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/drone_code_genpy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 0
+.PHONY : drone_code/CMakeFiles/drone_code_genpy.dir/rule
+
+# Convenience name for target.
+drone_code_genpy: drone_code/CMakeFiles/drone_code_genpy.dir/rule
+
+.PHONY : drone_code_genpy
+
+# clean rule for target.
+drone_code/CMakeFiles/drone_code_genpy.dir/clean:
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_genpy.dir/build.make drone_code/CMakeFiles/drone_code_genpy.dir/clean
+.PHONY : drone_code/CMakeFiles/drone_code_genpy.dir/clean
+
+# clean rule for target.
+clean: drone_code/CMakeFiles/drone_code_genpy.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target drone_code/CMakeFiles/drone_code_gennodejs.dir
+
+# All Build rule for target.
+drone_code/CMakeFiles/drone_code_gennodejs.dir/all: drone_code/CMakeFiles/drone_code_generate_messages_nodejs.dir/all
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_gennodejs.dir/build.make drone_code/CMakeFiles/drone_code_gennodejs.dir/depend
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_gennodejs.dir/build.make drone_code/CMakeFiles/drone_code_gennodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num= "Built target drone_code_gennodejs"
+.PHONY : drone_code/CMakeFiles/drone_code_gennodejs.dir/all
+
+# Build rule for subdir invocation for target.
+drone_code/CMakeFiles/drone_code_gennodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/drone_code_gennodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 0
+.PHONY : drone_code/CMakeFiles/drone_code_gennodejs.dir/rule
+
+# Convenience name for target.
+drone_code_gennodejs: drone_code/CMakeFiles/drone_code_gennodejs.dir/rule
+
+.PHONY : drone_code_gennodejs
+
+# clean rule for target.
+drone_code/CMakeFiles/drone_code_gennodejs.dir/clean:
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_gennodejs.dir/build.make drone_code/CMakeFiles/drone_code_gennodejs.dir/clean
+.PHONY : drone_code/CMakeFiles/drone_code_gennodejs.dir/clean
+
+# clean rule for target.
+clean: drone_code/CMakeFiles/drone_code_gennodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target drone_code/CMakeFiles/drone_code_generate_messages_lisp.dir
+
+# All Build rule for target.
+drone_code/CMakeFiles/drone_code_generate_messages_lisp.dir/all: drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir/all
+drone_code/CMakeFiles/drone_code_generate_messages_lisp.dir/all: drone_code/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+drone_code/CMakeFiles/drone_code_generate_messages_lisp.dir/all: drone_code/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_generate_messages_lisp.dir/build.make drone_code/CMakeFiles/drone_code_generate_messages_lisp.dir/depend
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_generate_messages_lisp.dir/build.make drone_code/CMakeFiles/drone_code_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num=6 "Built target drone_code_generate_messages_lisp"
+.PHONY : drone_code/CMakeFiles/drone_code_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+drone_code/CMakeFiles/drone_code_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/drone_code_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 0
+.PHONY : drone_code/CMakeFiles/drone_code_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+drone_code_generate_messages_lisp: drone_code/CMakeFiles/drone_code_generate_messages_lisp.dir/rule
+
+.PHONY : drone_code_generate_messages_lisp
+
+# clean rule for target.
+drone_code/CMakeFiles/drone_code_generate_messages_lisp.dir/clean:
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_generate_messages_lisp.dir/build.make drone_code/CMakeFiles/drone_code_generate_messages_lisp.dir/clean
+.PHONY : drone_code/CMakeFiles/drone_code_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: drone_code/CMakeFiles/drone_code_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target drone_code/CMakeFiles/drone_code_geneus.dir
+
+# All Build rule for target.
+drone_code/CMakeFiles/drone_code_geneus.dir/all: drone_code/CMakeFiles/drone_code_generate_messages_eus.dir/all
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_geneus.dir/build.make drone_code/CMakeFiles/drone_code_geneus.dir/depend
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_geneus.dir/build.make drone_code/CMakeFiles/drone_code_geneus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num= "Built target drone_code_geneus"
+.PHONY : drone_code/CMakeFiles/drone_code_geneus.dir/all
+
+# Build rule for subdir invocation for target.
+drone_code/CMakeFiles/drone_code_geneus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/drone_code_geneus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 0
+.PHONY : drone_code/CMakeFiles/drone_code_geneus.dir/rule
+
+# Convenience name for target.
+drone_code_geneus: drone_code/CMakeFiles/drone_code_geneus.dir/rule
+
+.PHONY : drone_code_geneus
+
+# clean rule for target.
+drone_code/CMakeFiles/drone_code_geneus.dir/clean:
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_geneus.dir/build.make drone_code/CMakeFiles/drone_code_geneus.dir/clean
+.PHONY : drone_code/CMakeFiles/drone_code_geneus.dir/clean
+
+# clean rule for target.
+clean: drone_code/CMakeFiles/drone_code_geneus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target drone_code/CMakeFiles/drone_code_generate_messages_eus.dir
+
+# All Build rule for target.
+drone_code/CMakeFiles/drone_code_generate_messages_eus.dir/all: drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir/all
+drone_code/CMakeFiles/drone_code_generate_messages_eus.dir/all: drone_code/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+drone_code/CMakeFiles/drone_code_generate_messages_eus.dir/all: drone_code/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_generate_messages_eus.dir/build.make drone_code/CMakeFiles/drone_code_generate_messages_eus.dir/depend
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_generate_messages_eus.dir/build.make drone_code/CMakeFiles/drone_code_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num=4,5 "Built target drone_code_generate_messages_eus"
+.PHONY : drone_code/CMakeFiles/drone_code_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+drone_code/CMakeFiles/drone_code_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/drone_code_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 0
+.PHONY : drone_code/CMakeFiles/drone_code_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+drone_code_generate_messages_eus: drone_code/CMakeFiles/drone_code_generate_messages_eus.dir/rule
+
+.PHONY : drone_code_generate_messages_eus
+
+# clean rule for target.
+drone_code/CMakeFiles/drone_code_generate_messages_eus.dir/clean:
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_generate_messages_eus.dir/build.make drone_code/CMakeFiles/drone_code_generate_messages_eus.dir/clean
+.PHONY : drone_code/CMakeFiles/drone_code_generate_messages_eus.dir/clean
+
+# clean rule for target.
+clean: drone_code/CMakeFiles/drone_code_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir
+
+# All Build rule for target.
+drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir/all:
+	$(MAKE) -f drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir/build.make drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir/depend
+	$(MAKE) -f drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir/build.make drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num= "Built target _drone_code_generate_messages_check_deps_coord"
+.PHONY : drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir/all
+
+# Build rule for subdir invocation for target.
+drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 0
+.PHONY : drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir/rule
+
+# Convenience name for target.
+_drone_code_generate_messages_check_deps_coord: drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir/rule
+
+.PHONY : _drone_code_generate_messages_check_deps_coord
+
+# clean rule for target.
+drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir/clean:
+	$(MAKE) -f drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir/build.make drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir/clean
+.PHONY : drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir/clean
+
+# clean rule for target.
+clean: drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target drone_code/CMakeFiles/drone_code_generate_messages.dir
+
+# All Build rule for target.
+drone_code/CMakeFiles/drone_code_generate_messages.dir/all: drone_code/CMakeFiles/drone_code_generate_messages_lisp.dir/all
+drone_code/CMakeFiles/drone_code_generate_messages.dir/all: drone_code/CMakeFiles/drone_code_generate_messages_eus.dir/all
+drone_code/CMakeFiles/drone_code_generate_messages.dir/all: drone_code/CMakeFiles/drone_code_generate_messages_py.dir/all
+drone_code/CMakeFiles/drone_code_generate_messages.dir/all: drone_code/CMakeFiles/drone_code_generate_messages_nodejs.dir/all
+drone_code/CMakeFiles/drone_code_generate_messages.dir/all: drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir/all
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_generate_messages.dir/build.make drone_code/CMakeFiles/drone_code_generate_messages.dir/depend
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_generate_messages.dir/build.make drone_code/CMakeFiles/drone_code_generate_messages.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num= "Built target drone_code_generate_messages"
+.PHONY : drone_code/CMakeFiles/drone_code_generate_messages.dir/all
+
+# Include target in all.
+all: drone_code/CMakeFiles/drone_code_generate_messages.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+drone_code/CMakeFiles/drone_code_generate_messages.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/drone_code_generate_messages.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 0
+.PHONY : drone_code/CMakeFiles/drone_code_generate_messages.dir/rule
+
+# Convenience name for target.
+drone_code_generate_messages: drone_code/CMakeFiles/drone_code_generate_messages.dir/rule
+
+.PHONY : drone_code_generate_messages
+
+# clean rule for target.
+drone_code/CMakeFiles/drone_code_generate_messages.dir/clean:
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_generate_messages.dir/build.make drone_code/CMakeFiles/drone_code_generate_messages.dir/clean
+.PHONY : drone_code/CMakeFiles/drone_code_generate_messages.dir/clean
+
+# clean rule for target.
+clean: drone_code/CMakeFiles/drone_code_generate_messages.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target drone_code/CMakeFiles/drone_code_generate_messages_py.dir
+
+# All Build rule for target.
+drone_code/CMakeFiles/drone_code_generate_messages_py.dir/all: drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir/all
+drone_code/CMakeFiles/drone_code_generate_messages_py.dir/all: drone_code/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+drone_code/CMakeFiles/drone_code_generate_messages_py.dir/all: drone_code/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_generate_messages_py.dir/build.make drone_code/CMakeFiles/drone_code_generate_messages_py.dir/depend
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_generate_messages_py.dir/build.make drone_code/CMakeFiles/drone_code_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num=8,9 "Built target drone_code_generate_messages_py"
+.PHONY : drone_code/CMakeFiles/drone_code_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+drone_code/CMakeFiles/drone_code_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/drone_code_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 0
+.PHONY : drone_code/CMakeFiles/drone_code_generate_messages_py.dir/rule
+
+# Convenience name for target.
+drone_code_generate_messages_py: drone_code/CMakeFiles/drone_code_generate_messages_py.dir/rule
+
+.PHONY : drone_code_generate_messages_py
+
+# clean rule for target.
+drone_code/CMakeFiles/drone_code_generate_messages_py.dir/clean:
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_generate_messages_py.dir/build.make drone_code/CMakeFiles/drone_code_generate_messages_py.dir/clean
+.PHONY : drone_code/CMakeFiles/drone_code_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: drone_code/CMakeFiles/drone_code_generate_messages_py.dir/clean
 
 .PHONY : clean
 
@@ -576,6 +940,40 @@ drone_code/CMakeFiles/visualization_msgs_generate_messages_py.dir/clean:
 
 # clean rule for target.
 clean: drone_code/CMakeFiles/visualization_msgs_generate_messages_py.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target drone_code/CMakeFiles/drone_code_generate_messages_nodejs.dir
+
+# All Build rule for target.
+drone_code/CMakeFiles/drone_code_generate_messages_nodejs.dir/all: drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir/all
+drone_code/CMakeFiles/drone_code_generate_messages_nodejs.dir/all: drone_code/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+drone_code/CMakeFiles/drone_code_generate_messages_nodejs.dir/all: drone_code/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_generate_messages_nodejs.dir/build.make drone_code/CMakeFiles/drone_code_generate_messages_nodejs.dir/depend
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_generate_messages_nodejs.dir/build.make drone_code/CMakeFiles/drone_code_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num=7 "Built target drone_code_generate_messages_nodejs"
+.PHONY : drone_code/CMakeFiles/drone_code_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+drone_code/CMakeFiles/drone_code_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/drone_code_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 0
+.PHONY : drone_code/CMakeFiles/drone_code_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+drone_code_generate_messages_nodejs: drone_code/CMakeFiles/drone_code_generate_messages_nodejs.dir/rule
+
+.PHONY : drone_code_generate_messages_nodejs
+
+# clean rule for target.
+drone_code/CMakeFiles/drone_code_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_generate_messages_nodejs.dir/build.make drone_code/CMakeFiles/drone_code_generate_messages_nodejs.dir/clean
+.PHONY : drone_code/CMakeFiles/drone_code_generate_messages_nodejs.dir/clean
+
+# clean rule for target.
+clean: drone_code/CMakeFiles/drone_code_generate_messages_nodejs.dir/clean
 
 .PHONY : clean
 
@@ -896,6 +1294,77 @@ drone_code/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/clean:
 
 # clean rule for target.
 clean: drone_code/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target drone_code/CMakeFiles/uav0_communication.dir
+
+# All Build rule for target.
+drone_code/CMakeFiles/uav0_communication.dir/all:
+	$(MAKE) -f drone_code/CMakeFiles/uav0_communication.dir/build.make drone_code/CMakeFiles/uav0_communication.dir/depend
+	$(MAKE) -f drone_code/CMakeFiles/uav0_communication.dir/build.make drone_code/CMakeFiles/uav0_communication.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num=27,28 "Built target uav0_communication"
+.PHONY : drone_code/CMakeFiles/uav0_communication.dir/all
+
+# Include target in all.
+all: drone_code/CMakeFiles/uav0_communication.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+drone_code/CMakeFiles/uav0_communication.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/uav0_communication.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 0
+.PHONY : drone_code/CMakeFiles/uav0_communication.dir/rule
+
+# Convenience name for target.
+uav0_communication: drone_code/CMakeFiles/uav0_communication.dir/rule
+
+.PHONY : uav0_communication
+
+# clean rule for target.
+drone_code/CMakeFiles/uav0_communication.dir/clean:
+	$(MAKE) -f drone_code/CMakeFiles/uav0_communication.dir/build.make drone_code/CMakeFiles/uav0_communication.dir/clean
+.PHONY : drone_code/CMakeFiles/uav0_communication.dir/clean
+
+# clean rule for target.
+clean: drone_code/CMakeFiles/uav0_communication.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir
+
+# All Build rule for target.
+drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir/all: drone_code/CMakeFiles/_drone_code_generate_messages_check_deps_coord.dir/all
+drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir/all: drone_code/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir/all: drone_code/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir/build.make drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir/depend
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir/build.make drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num=3 "Built target drone_code_generate_messages_cpp"
+.PHONY : drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 0
+.PHONY : drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+drone_code_generate_messages_cpp: drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir/rule
+
+.PHONY : drone_code_generate_messages_cpp
+
+# clean rule for target.
+drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir/clean:
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir/build.make drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir/clean
+.PHONY : drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir/clean
 
 .PHONY : clean
 
@@ -1248,6 +1717,43 @@ drone_code/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/clean:
 
 # clean rule for target.
 clean: drone_code/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target drone_code/CMakeFiles/uav3_communication.dir
+
+# All Build rule for target.
+drone_code/CMakeFiles/uav3_communication.dir/all:
+	$(MAKE) -f drone_code/CMakeFiles/uav3_communication.dir/build.make drone_code/CMakeFiles/uav3_communication.dir/depend
+	$(MAKE) -f drone_code/CMakeFiles/uav3_communication.dir/build.make drone_code/CMakeFiles/uav3_communication.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num=33,34 "Built target uav3_communication"
+.PHONY : drone_code/CMakeFiles/uav3_communication.dir/all
+
+# Include target in all.
+all: drone_code/CMakeFiles/uav3_communication.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+drone_code/CMakeFiles/uav3_communication.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/uav3_communication.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 0
+.PHONY : drone_code/CMakeFiles/uav3_communication.dir/rule
+
+# Convenience name for target.
+uav3_communication: drone_code/CMakeFiles/uav3_communication.dir/rule
+
+.PHONY : uav3_communication
+
+# clean rule for target.
+drone_code/CMakeFiles/uav3_communication.dir/clean:
+	$(MAKE) -f drone_code/CMakeFiles/uav3_communication.dir/build.make drone_code/CMakeFiles/uav3_communication.dir/clean
+.PHONY : drone_code/CMakeFiles/uav3_communication.dir/clean
+
+# clean rule for target.
+clean: drone_code/CMakeFiles/uav3_communication.dir/clean
 
 .PHONY : clean
 
@@ -1796,6 +2302,38 @@ clean: drone_code/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target drone_code/CMakeFiles/drone_code_gencpp.dir
+
+# All Build rule for target.
+drone_code/CMakeFiles/drone_code_gencpp.dir/all: drone_code/CMakeFiles/drone_code_generate_messages_cpp.dir/all
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_gencpp.dir/build.make drone_code/CMakeFiles/drone_code_gencpp.dir/depend
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_gencpp.dir/build.make drone_code/CMakeFiles/drone_code_gencpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num= "Built target drone_code_gencpp"
+.PHONY : drone_code/CMakeFiles/drone_code_gencpp.dir/all
+
+# Build rule for subdir invocation for target.
+drone_code/CMakeFiles/drone_code_gencpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/drone_code_gencpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 0
+.PHONY : drone_code/CMakeFiles/drone_code_gencpp.dir/rule
+
+# Convenience name for target.
+drone_code_gencpp: drone_code/CMakeFiles/drone_code_gencpp.dir/rule
+
+.PHONY : drone_code_gencpp
+
+# clean rule for target.
+drone_code/CMakeFiles/drone_code_gencpp.dir/clean:
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_gencpp.dir/build.make drone_code/CMakeFiles/drone_code_gencpp.dir/clean
+.PHONY : drone_code/CMakeFiles/drone_code_gencpp.dir/clean
+
+# clean rule for target.
+clean: drone_code/CMakeFiles/drone_code_gencpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target drone_code/CMakeFiles/std_msgs_generate_messages_py.dir
 
 # All Build rule for target.
@@ -1956,43 +2494,6 @@ clean: drone_code/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target drone_code/CMakeFiles/uav0_node.dir
-
-# All Build rule for target.
-drone_code/CMakeFiles/uav0_node.dir/all:
-	$(MAKE) -f drone_code/CMakeFiles/uav0_node.dir/build.make drone_code/CMakeFiles/uav0_node.dir/depend
-	$(MAKE) -f drone_code/CMakeFiles/uav0_node.dir/build.make drone_code/CMakeFiles/uav0_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num=16,17 "Built target uav0_node"
-.PHONY : drone_code/CMakeFiles/uav0_node.dir/all
-
-# Include target in all.
-all: drone_code/CMakeFiles/uav0_node.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-drone_code/CMakeFiles/uav0_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/uav0_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 0
-.PHONY : drone_code/CMakeFiles/uav0_node.dir/rule
-
-# Convenience name for target.
-uav0_node: drone_code/CMakeFiles/uav0_node.dir/rule
-
-.PHONY : uav0_node
-
-# clean rule for target.
-drone_code/CMakeFiles/uav0_node.dir/clean:
-	$(MAKE) -f drone_code/CMakeFiles/uav0_node.dir/build.make drone_code/CMakeFiles/uav0_node.dir/clean
-.PHONY : drone_code/CMakeFiles/uav0_node.dir/clean
-
-# clean rule for target.
-clean: drone_code/CMakeFiles/uav0_node.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target drone_code/CMakeFiles/tf_generate_messages_py.dir
 
 # All Build rule for target.
@@ -2053,43 +2554,6 @@ drone_code/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean:
 
 # clean rule for target.
 clean: drone_code/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target drone_code/CMakeFiles/uav1_comm.dir
-
-# All Build rule for target.
-drone_code/CMakeFiles/uav1_comm.dir/all:
-	$(MAKE) -f drone_code/CMakeFiles/uav1_comm.dir/build.make drone_code/CMakeFiles/uav1_comm.dir/depend
-	$(MAKE) -f drone_code/CMakeFiles/uav1_comm.dir/build.make drone_code/CMakeFiles/uav1_comm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num=18,19 "Built target uav1_comm"
-.PHONY : drone_code/CMakeFiles/uav1_comm.dir/all
-
-# Include target in all.
-all: drone_code/CMakeFiles/uav1_comm.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-drone_code/CMakeFiles/uav1_comm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/uav1_comm.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 0
-.PHONY : drone_code/CMakeFiles/uav1_comm.dir/rule
-
-# Convenience name for target.
-uav1_comm: drone_code/CMakeFiles/uav1_comm.dir/rule
-
-.PHONY : uav1_comm
-
-# clean rule for target.
-drone_code/CMakeFiles/uav1_comm.dir/clean:
-	$(MAKE) -f drone_code/CMakeFiles/uav1_comm.dir/build.make drone_code/CMakeFiles/uav1_comm.dir/clean
-.PHONY : drone_code/CMakeFiles/uav1_comm.dir/clean
-
-# clean rule for target.
-clean: drone_code/CMakeFiles/uav1_comm.dir/clean
 
 .PHONY : clean
 
@@ -2158,43 +2622,6 @@ clean: drone_code/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target drone_code/CMakeFiles/offb_node.dir
-
-# All Build rule for target.
-drone_code/CMakeFiles/offb_node.dir/all:
-	$(MAKE) -f drone_code/CMakeFiles/offb_node.dir/build.make drone_code/CMakeFiles/offb_node.dir/depend
-	$(MAKE) -f drone_code/CMakeFiles/offb_node.dir/build.make drone_code/CMakeFiles/offb_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num=14,15 "Built target offb_node"
-.PHONY : drone_code/CMakeFiles/offb_node.dir/all
-
-# Include target in all.
-all: drone_code/CMakeFiles/offb_node.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-drone_code/CMakeFiles/offb_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/offb_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 0
-.PHONY : drone_code/CMakeFiles/offb_node.dir/rule
-
-# Convenience name for target.
-offb_node: drone_code/CMakeFiles/offb_node.dir/rule
-
-.PHONY : offb_node
-
-# clean rule for target.
-drone_code/CMakeFiles/offb_node.dir/clean:
-	$(MAKE) -f drone_code/CMakeFiles/offb_node.dir/build.make drone_code/CMakeFiles/offb_node.dir/clean
-.PHONY : drone_code/CMakeFiles/offb_node.dir/clean
-
-# clean rule for target.
-clean: drone_code/CMakeFiles/offb_node.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target drone_code/CMakeFiles/nav_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
@@ -2227,6 +2654,43 @@ clean: drone_code/CMakeFiles/nav_msgs_generate_messages_lisp.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target drone_code/CMakeFiles/mapping_node.dir
+
+# All Build rule for target.
+drone_code/CMakeFiles/mapping_node.dir/all:
+	$(MAKE) -f drone_code/CMakeFiles/mapping_node.dir/build.make drone_code/CMakeFiles/mapping_node.dir/depend
+	$(MAKE) -f drone_code/CMakeFiles/mapping_node.dir/build.make drone_code/CMakeFiles/mapping_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num=23,24 "Built target mapping_node"
+.PHONY : drone_code/CMakeFiles/mapping_node.dir/all
+
+# Include target in all.
+all: drone_code/CMakeFiles/mapping_node.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+drone_code/CMakeFiles/mapping_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/mapping_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 0
+.PHONY : drone_code/CMakeFiles/mapping_node.dir/rule
+
+# Convenience name for target.
+mapping_node: drone_code/CMakeFiles/mapping_node.dir/rule
+
+.PHONY : mapping_node
+
+# clean rule for target.
+drone_code/CMakeFiles/mapping_node.dir/clean:
+	$(MAKE) -f drone_code/CMakeFiles/mapping_node.dir/build.make drone_code/CMakeFiles/mapping_node.dir/clean
+.PHONY : drone_code/CMakeFiles/mapping_node.dir/clean
+
+# clean rule for target.
+clean: drone_code/CMakeFiles/mapping_node.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target drone_code/CMakeFiles/nav_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
@@ -2255,6 +2719,43 @@ drone_code/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/clean:
 
 # clean rule for target.
 clean: drone_code/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target drone_code/CMakeFiles/uav1_communication.dir
+
+# All Build rule for target.
+drone_code/CMakeFiles/uav1_communication.dir/all:
+	$(MAKE) -f drone_code/CMakeFiles/uav1_communication.dir/build.make drone_code/CMakeFiles/uav1_communication.dir/depend
+	$(MAKE) -f drone_code/CMakeFiles/uav1_communication.dir/build.make drone_code/CMakeFiles/uav1_communication.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num=29,30 "Built target uav1_communication"
+.PHONY : drone_code/CMakeFiles/uav1_communication.dir/all
+
+# Include target in all.
+all: drone_code/CMakeFiles/uav1_communication.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+drone_code/CMakeFiles/uav1_communication.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/uav1_communication.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 0
+.PHONY : drone_code/CMakeFiles/uav1_communication.dir/rule
+
+# Convenience name for target.
+uav1_communication: drone_code/CMakeFiles/uav1_communication.dir/rule
+
+.PHONY : uav1_communication
+
+# clean rule for target.
+drone_code/CMakeFiles/uav1_communication.dir/clean:
+	$(MAKE) -f drone_code/CMakeFiles/uav1_communication.dir/build.make drone_code/CMakeFiles/uav1_communication.dir/clean
+.PHONY : drone_code/CMakeFiles/uav1_communication.dir/clean
+
+# clean rule for target.
+clean: drone_code/CMakeFiles/uav1_communication.dir/clean
 
 .PHONY : clean
 
@@ -2351,6 +2852,38 @@ drone_code/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean:
 
 # clean rule for target.
 clean: drone_code/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target drone_code/CMakeFiles/drone_code_genlisp.dir
+
+# All Build rule for target.
+drone_code/CMakeFiles/drone_code_genlisp.dir/all: drone_code/CMakeFiles/drone_code_generate_messages_lisp.dir/all
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_genlisp.dir/build.make drone_code/CMakeFiles/drone_code_genlisp.dir/depend
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_genlisp.dir/build.make drone_code/CMakeFiles/drone_code_genlisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num= "Built target drone_code_genlisp"
+.PHONY : drone_code/CMakeFiles/drone_code_genlisp.dir/all
+
+# Build rule for subdir invocation for target.
+drone_code/CMakeFiles/drone_code_genlisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/drone_code_genlisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 0
+.PHONY : drone_code/CMakeFiles/drone_code_genlisp.dir/rule
+
+# Convenience name for target.
+drone_code_genlisp: drone_code/CMakeFiles/drone_code_genlisp.dir/rule
+
+.PHONY : drone_code_genlisp
+
+# clean rule for target.
+drone_code/CMakeFiles/drone_code_genlisp.dir/clean:
+	$(MAKE) -f drone_code/CMakeFiles/drone_code_genlisp.dir/build.make drone_code/CMakeFiles/drone_code_genlisp.dir/clean
+.PHONY : drone_code/CMakeFiles/drone_code_genlisp.dir/clean
+
+# clean rule for target.
+clean: drone_code/CMakeFiles/drone_code_genlisp.dir/clean
 
 .PHONY : clean
 
@@ -2867,43 +3400,6 @@ clean: drone_code/CMakeFiles/tf_generate_messages_cpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target drone_code/CMakeFiles/uav1_node.dir
-
-# All Build rule for target.
-drone_code/CMakeFiles/uav1_node.dir/all:
-	$(MAKE) -f drone_code/CMakeFiles/uav1_node.dir/build.make drone_code/CMakeFiles/uav1_node.dir/depend
-	$(MAKE) -f drone_code/CMakeFiles/uav1_node.dir/build.make drone_code/CMakeFiles/uav1_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num=20,21 "Built target uav1_node"
-.PHONY : drone_code/CMakeFiles/uav1_node.dir/all
-
-# Include target in all.
-all: drone_code/CMakeFiles/uav1_node.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-drone_code/CMakeFiles/uav1_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/uav1_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 0
-.PHONY : drone_code/CMakeFiles/uav1_node.dir/rule
-
-# Convenience name for target.
-uav1_node: drone_code/CMakeFiles/uav1_node.dir/rule
-
-.PHONY : uav1_node
-
-# clean rule for target.
-drone_code/CMakeFiles/uav1_node.dir/clean:
-	$(MAKE) -f drone_code/CMakeFiles/uav1_node.dir/build.make drone_code/CMakeFiles/uav1_node.dir/clean
-.PHONY : drone_code/CMakeFiles/uav1_node.dir/clean
-
-# clean rule for target.
-clean: drone_code/CMakeFiles/uav1_node.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target drone_code/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
@@ -3124,6 +3620,43 @@ drone_code/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/clean:
 
 # clean rule for target.
 clean: drone_code/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target drone_code/CMakeFiles/uav2_communication.dir
+
+# All Build rule for target.
+drone_code/CMakeFiles/uav2_communication.dir/all:
+	$(MAKE) -f drone_code/CMakeFiles/uav2_communication.dir/build.make drone_code/CMakeFiles/uav2_communication.dir/depend
+	$(MAKE) -f drone_code/CMakeFiles/uav2_communication.dir/build.make drone_code/CMakeFiles/uav2_communication.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles --progress-num=31,32 "Built target uav2_communication"
+.PHONY : drone_code/CMakeFiles/uav2_communication.dir/all
+
+# Include target in all.
+all: drone_code/CMakeFiles/uav2_communication.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+drone_code/CMakeFiles/uav2_communication.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 drone_code/CMakeFiles/uav2_communication.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Thesis2019_code/workspace/build/CMakeFiles 0
+.PHONY : drone_code/CMakeFiles/uav2_communication.dir/rule
+
+# Convenience name for target.
+uav2_communication: drone_code/CMakeFiles/uav2_communication.dir/rule
+
+.PHONY : uav2_communication
+
+# clean rule for target.
+drone_code/CMakeFiles/uav2_communication.dir/clean:
+	$(MAKE) -f drone_code/CMakeFiles/uav2_communication.dir/build.make drone_code/CMakeFiles/uav2_communication.dir/clean
+.PHONY : drone_code/CMakeFiles/uav2_communication.dir/clean
+
+# clean rule for target.
+clean: drone_code/CMakeFiles/uav2_communication.dir/clean
 
 .PHONY : clean
 

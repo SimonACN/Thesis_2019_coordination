@@ -17,6 +17,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/mnt/hgfs/Thesis2019_code/workspace/src/drone_code/include"
   "/home/simon/catkin_ws/devel/include"
   "/home/simon/catkin_ws/devel/.private/mavros_msgs/include"
   "/home/simon/catkin_ws/src/mavros/libmavconn/include"

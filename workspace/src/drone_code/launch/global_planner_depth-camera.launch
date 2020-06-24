@@ -1,6 +1,6 @@
 <launch>
 
-    <arg name="world_file_name"    default="simple_obstacle" />
+    <arg name="world_file_name"    default="simple_environment" />
     <arg name="world_path" default="$(find drone_code)/worlds/$(arg world_file_name).world" />
     <arg name="pointcloud_topics" default="[/camera/depth/points]"/>
     <arg name="start_pos_x" default="0" />
@@ -27,8 +27,30 @@
       <arg name="start_pos_x" value="$(arg start_pos_x)" />
         <arg name="start_pos_y" value="$(arg start_pos_y)" />
         <arg name="start_pos_z" value="$(arg start_pos_z)" />
-    </include>>
+    </include>
+
+    <node pkg="drone_code" type="explore_node" name="explore_node" output="screen">
+        <param name="start_pos_x" value="$(arg start_pos_x)" />
+        <param name="start_pos_y" value="$(arg start_pos_y)" />
+	<param name="ID" value="0" />
+	<param name="frame_id" type="string" value="local_origin" />
+</node>
+
+
 
     <node pkg="rviz" type="rviz" output="screen" name="rviz" respawn="true"
           args="-d $(find drone_code)/resource/global_planner.rviz" />
+
+
+<!--
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <rosparam file="$(find drone_code)/resource/costmap_common_params.yaml" command="load" ns="global_costmap" /> 
+    <rosparam file="$(find drone_code)/resource/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find drone_code)/resource/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find drone_code)/resource/global_costmap_params.yaml" command="load" /> 
+    <rosparam file="$(find drone_code)/resource/base_local_planner_params.yaml" command="load" />
+    <remap from="cmd_vel" to="mavros/setpoint_velocity/cmd_vel" /> 
+</node>
+-->
+
 </launch>

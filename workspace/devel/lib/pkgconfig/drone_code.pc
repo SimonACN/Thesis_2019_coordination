@@ -3,6 +3,6 @@ prefix=/mnt/hgfs/Thesis2019_code/workspace/devel
 Name: drone_code
 Description: Description of drone_code
 Version: 0.0.0
-Cflags: 
+Cflags: -I/mnt/hgfs/Thesis2019_code/workspace/devel/include -I/mnt/hgfs/Thesis2019_code/workspace/src/drone_code/include
 Libs: -L${prefix}/lib 
-Requires: 
+Requires: message_runtime

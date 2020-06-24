@@ -8,7 +8,7 @@ add_definitions(-std=c++11)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS roscpp rospy std_msgs genmsg mavlink mavros_msgs mavros tf octomap_ros
-  octomap_msgs visualization_msgs rosmsg)
+  octomap_msgs visualization_msgs rosmsg message_generation)
 find_package(octomap REQUIRED)
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -44,11 +44,10 @@ find_package(octomap REQUIRED)
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
-# add_message_files(
-#   FILES
-#   Message1.msg
-#   Message2.msg
-# )
+ add_message_files(
+   FILES
+   coord.msg
+ )
 
 ## Generate services in the 'srv' folder
 # add_service_files(
@@ -65,10 +64,11 @@ find_package(octomap REQUIRED)
 # )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   std_msgs  # Or other packages containing msgs
-# )
+ generate_messages(
+   DEPENDENCIES
+   std_msgs
+   geometry_msgs  # Or other packages containing msgs
+ )
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -100,9 +100,9 @@ find_package(octomap REQUIRED)
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
- # INCLUDE_DIRS include
+  INCLUDE_DIRS include
 # LIBRARIES drone_code
- # CATKIN_DEPENDS other_catkin_pkg
+ CATKIN_DEPENDS message_runtime
 #  DEPENDS system_lib
 )
 
@@ -113,7 +113,7 @@ catkin_package(
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
-# include
+ include
  ${catkin_INCLUDE_DIRS}
  ${OCTOMAP_INCLUDE_DIRS}
 )
@@ -133,11 +133,14 @@ link_libraries(${OCTOMAP_LIBRARIES})
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/drone_gazebo_node.cpp)
-add_executable(offb_node src/offb_node.cpp)
 add_executable(explore_node src/explore_node.cpp)
-add_executable(uav1_node src/uav1_node.cpp)
-add_executable(uav0_node src/uav0_node.cpp)
-add_executable(uav1_comm src/uav1_comm.cpp)
+add_executable(mapping_node src/mapping_node.cpp)
+add_executable(uav1_communication src/uav1_communication.cpp)
+add_executable(uav0_communication src/uav0_communication.cpp)
+add_executable(uav2_communication src/uav2_communication.cpp)
+add_executable(uav3_communication src/uav3_communication.cpp)
+add_executable(Coordination src/Coordination.cpp)
+add_executable(trackExplo src/trackExplo.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -148,11 +151,15 @@ add_executable(uav1_comm src/uav1_comm.cpp)
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(offb_node ${catkin_LIBRARIES})
+add_dependencies(explore_node drone_code_generate_messages_cpp)
 target_link_libraries(explore_node ${catkin_LIBRARIES})
-target_link_libraries(uav1_node ${catkin_LIBRARIES})
-target_link_libraries(uav0_node ${catkin_LIBRARIES})
-target_link_libraries(uav1_comm ${catkin_LIBRARIES})
+target_link_libraries(mapping_node ${catkin_LIBRARIES})
+target_link_libraries(uav1_communication ${catkin_LIBRARIES})
+target_link_libraries(uav0_communication ${catkin_LIBRARIES})
+target_link_libraries(uav2_communication ${catkin_LIBRARIES})
+target_link_libraries(uav3_communication ${catkin_LIBRARIES})
+target_link_libraries(Coordination ${catkin_LIBRARIES})
+target_link_libraries(trackExplo ${catkin_LIBRARIES})
 
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(${PROJECT_NAME}_node

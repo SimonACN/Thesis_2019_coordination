@@ -8,6 +8,7 @@ drone_code/CMakeFiles/uav1_node.dir/src/uav1_node.cpp.o: /home/simon/catkin_ws/d
 drone_code/CMakeFiles/uav1_node.dir/src/uav1_node.cpp.o: /home/simon/catkin_ws/devel/include/mavros_msgs/SetModeRequest.h
 drone_code/CMakeFiles/uav1_node.dir/src/uav1_node.cpp.o: /home/simon/catkin_ws/devel/include/mavros_msgs/SetModeResponse.h
 drone_code/CMakeFiles/uav1_node.dir/src/uav1_node.cpp.o: /home/simon/catkin_ws/devel/include/mavros_msgs/State.h
+drone_code/CMakeFiles/uav1_node.dir/src/uav1_node.cpp.o: /mnt/hgfs/Thesis2019_code/workspace/src/drone_code/include/coordination.h
 drone_code/CMakeFiles/uav1_node.dir/src/uav1_node.cpp.o: /mnt/hgfs/Thesis2019_code/workspace/src/drone_code/src/uav1_node.cpp
 drone_code/CMakeFiles/uav1_node.dir/src/uav1_node.cpp.o: /opt/ros/melodic/include/boost_161_condition_variable.h
 drone_code/CMakeFiles/uav1_node.dir/src/uav1_node.cpp.o: /opt/ros/melodic/include/boost_161_pthread_condition_variable.h
@@ -85,8 +86,10 @@ drone_code/CMakeFiles/uav1_node.dir/src/uav1_node.cpp.o: /opt/ros/melodic/includ
 drone_code/CMakeFiles/uav1_node.dir/src/uav1_node.cpp.o: /opt/ros/melodic/include/rosconsole/macros_generated.h
 drone_code/CMakeFiles/uav1_node.dir/src/uav1_node.cpp.o: /opt/ros/melodic/include/sensor_msgs/ChannelFloat32.h
 drone_code/CMakeFiles/uav1_node.dir/src/uav1_node.cpp.o: /opt/ros/melodic/include/sensor_msgs/PointCloud.h
+drone_code/CMakeFiles/uav1_node.dir/src/uav1_node.cpp.o: /opt/ros/melodic/include/std_msgs/Bool.h
 drone_code/CMakeFiles/uav1_node.dir/src/uav1_node.cpp.o: /opt/ros/melodic/include/std_msgs/Empty.h
 drone_code/CMakeFiles/uav1_node.dir/src/uav1_node.cpp.o: /opt/ros/melodic/include/std_msgs/Header.h
+drone_code/CMakeFiles/uav1_node.dir/src/uav1_node.cpp.o: /opt/ros/melodic/include/std_msgs/Int8.h
 drone_code/CMakeFiles/uav1_node.dir/src/uav1_node.cpp.o: /opt/ros/melodic/include/tf/FrameGraph.h
 drone_code/CMakeFiles/uav1_node.dir/src/uav1_node.cpp.o: /opt/ros/melodic/include/tf/FrameGraphRequest.h
 drone_code/CMakeFiles/uav1_node.dir/src/uav1_node.cpp.o: /opt/ros/melodic/include/tf/FrameGraphResponse.h

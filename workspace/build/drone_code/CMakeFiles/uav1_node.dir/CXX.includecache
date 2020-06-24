@@ -104,6 +104,14 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
+/mnt/hgfs/Thesis2019_code/workspace/src/drone_code/include/coordination.h
+std_msgs/Int8.h
+-
+geometry_msgs/PoseStamped.h
+-
+std_msgs/Bool.h
+-
+
 /mnt/hgfs/Thesis2019_code/workspace/src/drone_code/src/uav1_node.cpp
 ros/ros.h
 -
@@ -119,6 +127,8 @@ tf/tf.h
 -
 tf/transform_listener.h
 -
+coordination.h
+/mnt/hgfs/Thesis2019_code/workspace/src/drone_code/src/coordination.h
 
 /opt/ros/melodic/include/boost_161_condition_variable.h
 boost/thread/detail/platform.hpp
@@ -1144,6 +1154,22 @@ geometry_msgs/Point32.h
 sensor_msgs/ChannelFloat32.h
 -
 
+/opt/ros/melodic/include/std_msgs/Bool.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
 /opt/ros/melodic/include/std_msgs/Empty.h
 string
 -
@@ -1161,6 +1187,22 @@ ros/message_operations.h
 -
 
 /opt/ros/melodic/include/std_msgs/Header.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
+/opt/ros/melodic/include/std_msgs/Int8.h
 string
 -
 vector

@@ -79,7 +79,7 @@ int main(int argc, char **argv)
             }
         }
 
-        local_pos_pub.publish(pose);
+        //local_pos_pub.publish(pose);
         ros::spinOnce();
         rate.sleep();
     }
