@@ -1,14 +1,15 @@
-# Thesis2019_code
+# Source coude for Autonomous cooperative exploration for unmanned aerial vehicles, Thesis 2020
 
 # Source files
 
-ROS packages are located in workspace/src.
+ROS package are located in workspace/src.
+
+# Dependencies
+PX4 software - https://docs.px4.io/v1.9.0/en/
+Global planner - https://github.com/PX4/avoidance#global-planner
+Gazebo - http://gazebosim.org/
 
 # drone_code
-This is the developed package for the coordinated exploration. Source codes are located under drone_code/src.
+This is the developed ROS package for the Autonomous cooperative exploration. Source codes are located under drone_code/src and should be self-explanatory.
+Multi-UAV configurations are described in multi_global_planner_depth-camera.launch and configurations for single UAV are in global_planner_depth-camera.launch.
 
-uav1_comm.cpp is the source code for the node that merges the 3D and 2D maps and publishes them for rviz.
-
-uavX_node is the source code for basic navigation with global path planner.
-
-Use multi_global_planner_depth-camera.launch to launch the relevant nodes and configurations for multi-vehicle exploration and global_planner_depth-camera.launch for solo exploration
