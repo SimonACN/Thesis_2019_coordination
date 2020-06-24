@@ -13,6 +13,8 @@ Gazebo - http://gazebosim.org/
 
 ROS - http://wiki.ros.org/
 
+Octomap - http://octomap.github.io/
+
 # drone_code
 This is the developed ROS package for the Autonomous cooperative exploration. Source codes are located under drone_code/src and should be self-explanatory.
 
