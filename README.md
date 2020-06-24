@@ -4,7 +4,7 @@
 
 ROS package are located in workspace/src.
 
-# Some dependencies
+# Some noteworthy dependencies
 PX4 software - https://docs.px4.io/v1.9.0/en/
 
 Global planner - https://github.com/PX4/avoidance#global-planner
@@ -15,5 +15,8 @@ ROS - http://wiki.ros.org/
 
 # drone_code
 This is the developed ROS package for the Autonomous cooperative exploration. Source codes are located under drone_code/src and should be self-explanatory.
-Multi-UAV configurations are described in multi_global_planner_depth-camera.launch and configurations for single UAV are in global_planner_depth-camera.launch.
+
+Launch files are located under drone_code/launch, and sets up the configurations for a simulation.
+
+Multi-UAV configurations are described in multi_global_planner_depth-camera.launch and configurations for only a single UAV are in global_planner_depth-camera.launch.
 
