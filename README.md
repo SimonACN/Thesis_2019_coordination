@@ -2,7 +2,7 @@
 
 # Source files
 
-ROS package are located in workspace/src.
+ROS package is located in workspace/src.
 
 # Some noteworthy dependencies
 PX4 software - https://docs.px4.io/v1.9.0/en/
